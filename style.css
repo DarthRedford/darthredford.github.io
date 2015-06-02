@@ -1,0 +1,21 @@
+.jumbotron{
+  heght:100%;
+  width:100%;
+}
+
+.container{
+  width:1025px;
+}
+
+.jumbotron .container {
+  max-width: 100%;
+}
+
+.footer {
+  position: ;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #CCC;
+}

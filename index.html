@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Redford Technology Center </title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Test</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+      <link rel="stylesheet" type="text/css" href="style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,141 +18,103 @@
     <![endif]-->
   </head>
   <body>
-     <!--Navbar-->
-      <nav class="navbar navbar-inverse navbar-fixed">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Redford Technology</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Members <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="joshua.html">Joshua</a></li>
-            <li><a href="jonathan.html">Jonathan</a></li>
-            <li><a href="jon.html">Jon</a></li>
-            <li><a href="cathy.html">Cathy</a></li>
-              
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
+    
+      <div class="container">
+       <!-- Top Navbar -->
+          <header class="page-header fixed-top">
+              <a href="#"><h2>Ward Fitness</h2></a>
+            <a class="navbar-brand" href="#"></a>
+        <ul class="nav nav-pills">
+       <li><a href="#">Home</a></li>
+          <li><a href="#">Ok</a></li>
+          <li><a href="#">Whatever</a></li>
+          <li><a href="blog.html">Blog</a></li>
+      <form class="navbar-form navbar-right push-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-      <!--End Navbar-->
-      <div class="page-content-wrapper">
+      </form>  
+              </ul>
+     
+          </header>
+      
+      </div>
+        <!--Carousel-->
+       
+       <div id="myCarousel" class="carousel slide jumbotron">
       <div class="container">
-      <header class="page-header">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
-        <div class="page-header">
-          <h1><a href="index.html"> Redford Technology Center</a> <small>A dreary spectacle</small></h1>
-       </div>
-    </header>
-          <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          
-          <div class="container">
-            <div class="jumbotron">
-              <h1>This is a test.</h1>
-              
-              
-            </div>
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>          
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active text-center">
+            <h1>Headline</h1>
+            <p class="lead">This is a headline. Watch another slide in.</p>
+            
           </div>
-        </div>
-        <div class="item">
-          
-          <div class="container">
-            <div class="jumbotron">
-              <h1>Test Number 2.</h1>
+          <div class="item text-center">
+            <h1>This is headline 2</h1>
+              <p class="lead">Wanna see one more?</p>
               
-            </div>
           </div>
-        </div>
-        <div class="item">
-          
-          <div class="container">
-            <div class="jumbotron">
-              <h1>One more for good measure.</h1>
-              
-            </div>
+          <div class="item text-center">
+            <h1>Final one</h1>
+            <p class="lead">This is the last slide.</p>
+                       
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-    </div><!-- /.carousel -->
-   
-
-  <!-- Left and right controls -->
- <!--
-          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
--->
-          </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    </div>
+    <!-- End carousel -->
         
-             </div>
-         
-         </div>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-
+        
+        <!--Three Coloums-->
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Monday, June 1</h3>
+                <p>Was it not because of these that Solomon the king of Israel sinned?—Neh. 13:26.
+In Nehemiah’s day, Israelite men were marrying foreign women. (Neh. 13:23-25, 27) During his first visit to Jerusalem, Nehemiah had all the older men sign a written agreement pledging that they would not marry pagans. (Neh. 9:38; 10:30) A few years later, however, he found that not only had Jewish men taken foreign wives but they were about to lose their very identity as God’s sanctified people! The children of these foreign women could not read or speak Hebrew. When they got older, would they identify themselves as Israelites? Or would they rather think of themselves as Ashdodites, Ammonites, or Moabites? Without knowing the Hebrew language, was it likely that they would be able to understand God’s Law? How could they get to know Jehovah and choose to serve him instead of the false gods their mothers worshipped? Swift and decisive action was needed, and Nehemiah took such action.—Neh. 13:28. w13 8/15 1:16</p></div>
+            <div class="col-md-4">
+                <h3>Tuesday, June 2</h3>
+                <p>Happy is that slave if his master on arriving finds him doing so.—Matt. 24:46.
+In the part of his prophecy that is recorded at Matthew 24:29–25:46, Jesus focuses primarily on what will happen during these last days and during the coming great tribulation. There, Jesus makes eight references to his “coming,” or arrival. Regarding the great tribulation, he states: “They will see the Son of man coming on the clouds.” “You do not know on what day your Lord is coming.” “At an hour that you do not think to be it, the Son of man is coming.” And in his parable of the sheep and the goats, Jesus states: “The Son of man arrives in his glory.” (Matt. 24:30, 42, 44; 25:31) Each of these four references applies to Christ’s future coming as Judge. Indeed, a consideration of Jesus’ prophecy in its entirety makes it clear that each of the eight references to his coming applies to the future time of judgment during the great tribulation. w13 7/15 1:15, 18</p></div>
+            <div class="col-md-4">
+                <h3>Wednesday, June 3</h3>
+                <p>God is not partial.—Acts 10:34.
+How can we imitate Jehovah’s impartiality? Genuine impartiality has two aspects: attitude and actions. Only if we are impartial will we treat others without partiality. Yet, it is not always easy to evaluate our own feelings objectively. So, what could we do to find out if we are known as being unbiased? Well, when Jesus was interested in knowing what people were saying about him, he asked his trusted friends: “Who are men saying the Son of man is?” (Matt. 16:13, 14) Why not follow Jesus in that? You could ask some friend whom you can count on for candor whether you have a reputation for being impartial. If he or she concedes that there seem to be some lingering traces of racial, social, or economic partiality, what should you do? Pray earnestly to Jehovah about your feelings, begging him to help you adjust your attitude so that it will reflect his impartiality to a fuller degree.—Matt. 7:7; Col. 3:10, 11. w13 6/15 1:11, 16</p></div>
+            
+        
+        </div>
+      </div>
+      </div>
+ <!--Footer-->
+      <footer class="footer">
+      <div class="container push-right" id="footer"> 
+      
+        <ul class="nav nav-tabs ">
+          <li><a href="#">Ok</a></li>
+          <li><a href="#">Whatever</a></li>
+          <li><a href="#">Nevermind</a></li>
+          </ul>
+             
+       
+    
+      </div> 
+    </footer>
+          <!--End footer-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  
-   
-    
-    </body>
-    </html>
+  </body>
+</html>
